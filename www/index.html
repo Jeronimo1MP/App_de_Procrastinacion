@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="css/index.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header><h1 class="tituloHeader">Procrastinacion</h1></header>
+    <div id="seccion">
+    </div>
+    <footer>
+        <nav>
+            <a href="puntos">puntos</a>
+            <svg alt="Agregar nueva tarea" id="iconoTarea" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+            <a href="tareas">tareas</a>
+        </nav>
+    </footer>
+
+<!-- Modal superpuesto -->
+<div id="miModal" class="modal">
+  <div class="modal-contenido">
+    <div class="seccionCerrar"><button id="cerrarModal">&times;</button></div>
+    <h2>Agregar Tarea</h2>
+    <p>Titulo</p>
+    <input id="tituloTarea" type="text" placeholder="Escribe el titulo de la tarea" />
+    <input id="contenidoTarea" type="text" placeholder="Escribe el contenido"/>
+    <input type="date" id="miCalendario">
+    <div id="contenedorAddTarea">
+        <button id="agregarTarea">Agregar</button>
+    </div>
+  </div>
+</div>
+
+<div id="modalEdit">
+    <div class="contenidoEdit">
+        <div><button id="cerrarEdit">&times;</button></div>
+        <p>Hola desde el edior</p>
+    </div>
+</div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
